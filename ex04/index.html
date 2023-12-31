@@ -8,9 +8,16 @@
 </head>
 <body>
     <h1>Trabalhando com Dados v2.0</h1>
-    <button>Clique para começar</button>
-    <div>
-        Aqui vai aparecer o resultado..;
+    <button onclick="perguntaNome()">Clique para começar</button>
+    <div id="resultado">
+        Aqui vai aparecer o resultado...
     </div>
 </body>
+<script>
+    function perguntaNome() {
+        var nome = prompt("Qual é o seu nome?");
+        var res = document.getElementById("resultado");
+        res.innerHTML = `Olá, ${nome}! É um grande prazer te conhecer!`
+    }
+</script>
 </html>
