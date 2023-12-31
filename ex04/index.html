@@ -11,14 +11,14 @@
     <h1>Trabalhando com Dados v2.0</h1>
     <button onclick="perguntaNome()">Clique para começar</button>
     <div id="resultado">
-        Aqui vai aparecer o resultado...
+        <p>Aqui vai aparecer o resultado...</p>
     </div>
 </body>
-<script>
-    function perguntaNome() {
-        let nome = prompt("Qual é o seu nome?");
-        let res = document.getElementById("resultado");
-        res.innerHTML = `Olá, <strong>${nome}</strong>! É um grande prazer te conhecer!`
-    }
-</script>
+    <script>
+        function perguntaNome() {
+            let nome = window.prompt("Qual é o seu nome?");
+            let res = document.getElementById("resultado");
+            res.innerHTML = `Olá, <strong>${nome}</strong>! É um grande prazer te conhecer!`
+        }
+    </script>
 </html>
