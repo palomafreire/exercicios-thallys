@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
 body {
-    background-color: wheat;
+    background-color: #f5deb3;
     text-align: center;
+    font-family: 'Varela', sans-serif;
+    
 }
 
 h1 {
-    color: rgba(0, 0, 0, 0.609);
-    text-align: center;
+    color: #69585f;
     padding: 40px;
-    font-family: 'Varela', sans-serif;
 }
 
 button {
-    background-color: rgba(57, 105, 148, 0.382);
+    background-color: #6B8F71;
     padding: 50px;
     border: none;
     border-radius: 15px;
-    color: rgb(26, 9, 73);
-    font-family: 'Varela', sans-serif;
+    color: rgba(0, 0, 0, 0.775);
     text-transform: uppercase;
+    font-weight: bold;
 }
