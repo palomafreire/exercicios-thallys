@@ -71,3 +71,8 @@ div#resultado {
     font-weight: bold;
 }
 
+hr {
+    border: 1px solid #000000;
+    margin: 20px 0;
+}
+
