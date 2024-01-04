@@ -1,32 +1,68 @@
+/* 
+F5DEB3 wheat
+E94F37 cinnabar
+69585F wenge
+DE6B48 burnt sienna
+6B8F71 reseda green 
+*/
+
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+    --corFundoDiv:#F5DEB3;
+    --corFundoH1: #e94f37be; /*#E94F37*/
+    --corBotao:#69585f5f; /* 69585F*/
+    --corFundoH2: #de6b488c; /*#DE6B48*/
+    --corFundo:#6B8F71;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #6B8F71;
+    background-color: var(--corFundo);
 }
 
 div#principal {
     margin: auto;
     margin-top: 50px;
-    background-color: #F5DEB3;
+    background-color: var(--corFundoDiv);
     width: 400px;
     border-radius: 20px;
     padding: 40px;
+    text-align: center;
 }
 
 h1, h2 {
-   color: black; 
    border-radius: 20px;
    text-align: center;
 }
 
 h1 {
     font-weight: bold;
-    background-color: #e94f37be;
+    background-color: var(--corFundoH1);
     padding: 20px;
 }
 
 h2 {
-    background-color: #de6b488c;   
+    background-color: var(--corFundoH2);   
     padding: 10px;
 }
+
+button {
+    background-color: var(--corBotao);
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+}
+
+div#resultado {
+    padding: 50px;
+}
+
