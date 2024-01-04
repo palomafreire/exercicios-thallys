@@ -17,14 +17,15 @@
             <p>O resultado vem aqui...</p>
         </div>
     </div>
+    <script>
+        function somar() {
+            let num1 = Number(window.prompt('Digite um número:'));
+            let num2 = Number(window.prompt('Digite outro número:'));
+            let res = document.getElementById('resultado');
+            let soma = num1 + num2;
+            res.innerHTML = `A soma entre ${num1} e ${num2} é igual a ${soma}!`
+        }
+    </script>
 </body>
-<script>
-    function somar() {
-        let num1 = Number(window.prompt('Digite um número:'));
-        let num2 = Number(window.prompt('Digite outro número:'));
-        let res = document.getElementById('resultado');
-        let soma = num1 + num2;
-        res.innerHTML = `A soma entre ${num1} e ${num2} é igual a ${soma}!`
-    }
-</script>
+
 </html>

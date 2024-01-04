@@ -15,16 +15,16 @@
             <p>O resultado vem aqui...</p>
         </div>
     </div>
-    
+    <script>
+        window.alert('Seja bem vindo(a) ao meu site!');
+        function calcular() {
+            let num = window.prompt('Digite um número:');
+            let dobro = num * 2;
+            let metade = num / 2;
+            let res = document.getElementById('resultado');
+            res.innerHTML = `O dobro de ${num} é ${dobro} e a metade é ${metade}!`;
+        }
+    </script>    
 </body>
-<script>
-    window.alert('Seja bem vindo(a) ao meu site!');
-    function calcular() {
-        let num = window.prompt('Digite um número:');
-        let dobro = num * 2;
-        let metade = num / 2;
-        let res = document.getElementById('resultado');
-        res.innerHTML = `O dobro de ${num} é ${dobro} e a metade é ${metade}!`;
-    }
-</script>
+
 </html>
