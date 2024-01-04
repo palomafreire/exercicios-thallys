@@ -25,7 +25,7 @@
         let nota2 = Number(window.prompt(`Além de ${nota1}, qual foi a outra nota de ${nome}?`));
         let media = (nota1 + nota2) / 2;
         let res = document.getElementById('resultado');
-        res.innerHTML = `Calculando a média final de ${nome}. <br>As notas obtidas foram ${nota1} e ${nota2}. <br>A média final será ${media}.`;
+        res.innerHTML = `Calculando a média final de <mark>${nome}</mark>. <br><br>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark>. <br><br>A média final será <mark>${media}</mark>.`;
     }
 </script>
 </html>
