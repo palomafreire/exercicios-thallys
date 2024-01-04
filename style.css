@@ -16,6 +16,7 @@ DE6B48 burnt sienna
     --corBotao:#69585f5f; /* 69585F*/
     --corFundoH2: #de6b488c; /*#DE6B48*/
     --corFundo:#6B8F71;
+    --corResultado: #d7d0073d; /*D7CF07*/
 }
 
 body {
@@ -51,7 +52,7 @@ h2 {
 
 button {
     background-color: var(--corBotao);
-    padding: 50px;
+    padding: 20px;
     border: none;
     border-radius: 20px;
     text-transform: uppercase;
@@ -63,6 +64,10 @@ ul {
 }
 
 div#resultado {
+    background-color: var(--corResultado);
+    border-radius: 20px;
+    margin-top: 20px;
     padding: 50px;
+    font-weight: bold;
 }
 
