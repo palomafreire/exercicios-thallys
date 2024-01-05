@@ -4,11 +4,13 @@ function calcularMedia() {
     let nota2 = Number(window.prompt(`Alem de ${nota1}, qual foi a outra nota de ${nome}?`));
     let media = (nota1 + nota2) / 2;
     let res = document.getElementById('resultado');
-    res.innerHTML = `Calculando a media final de <mark>${nome}</mark>. <br><br>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark>. <br><br>A media final e <mark>${media}</mark>.`;
+    res.innerHTML = `Calculando a media final de <mark>${nome}</mark>. <br><br>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark>. <br><br>A media final e <mark>${media}</mark>. <br> <br> A mensagem que temos e: `;
+    let msg; 
     if (media >= 6) {
-        res.innerHTML += `<p> A mensagem que temos e: Meus parabens!</p>`
+        msg = `Meus parabens!`
     } else {
-        res.innerHTML += `<p> A mensagem que temos e: Estude um pouco mais!</p>`
+        msg = `Estude um pouco mais!`
     }
+    res.innerHTML += `<strong style='color: red;'>${msg}</strong>`
    
 }
