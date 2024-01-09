@@ -13,8 +13,9 @@
         <p>Escolha o limite final para a contagem a partir do 0 (digite apenas números postivos)</p>
         
         <form autocomplete="off">
-            <p><label for="valorFinal">Valor final:</label> 
-                <input type="number" name="valorFinal" id="valorFinal">
+            <p>
+                <label for="valorFinal">Valor final:</label> 
+                <input type="number" name="valorFinal" id="valorFinal" maxlength="3" placeholder="Apenas positivos">
             </p>
         </form>
         <button onclick="contar()">Clique para iniciar</button>
