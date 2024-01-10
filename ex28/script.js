@@ -7,5 +7,5 @@ function fatorial() {
         fatorial = fatorial * i;
         res.innerHTML += `${i} x `;
     }
-    res.innerHTML += `1 = ${fatorial}`;
+    res.innerHTML += `1 = ${fatorial.toLocaleString('pt-BR')}`;
 }
